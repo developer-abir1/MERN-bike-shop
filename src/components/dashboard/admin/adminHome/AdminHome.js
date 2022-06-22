@@ -1,19 +1,15 @@
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 import Layout from '../../../layout/Layout';
-import { Link, Outlet } from "react-router-dom"
+import { Link, Outlet, useLocation } from "react-router-dom"
 
 const AdminHome = ({ title }) => {
-    if (Link === "/admin/make-admin")
-    {
-        title = "make admin"
-        return title
-    }
+
     return (
         <Layout title="Admin Home">
             <div className="dashboard" style={{ height: '500px' }}>
                 <div className=" row    h-100  ">
                     <div className="col-3 dashbodrd-section  "  >
-                        <Link to="/admin/" style={{ textDecoration: "none", color: 'black' }}>
+                        <Link to="/admin" style={{ textDecoration: "none", color: 'black' }}>
                             <h2 className="text-center py-3">Admin</h2>
                         </Link>
                         <ul>
@@ -33,7 +29,7 @@ const AdminHome = ({ title }) => {
                         </ul>
                     </div>
                     <div className="  col-9  h-100 dashboardItems">
-                        <h2 className="px-4 py-2 bg-white">  {title ? title + "admin" : 'admin'}</h2>
+                        <h2 className="px-4 py-2 bg-white">   {title}</h2>
                         <Outlet />
                     </div>
 

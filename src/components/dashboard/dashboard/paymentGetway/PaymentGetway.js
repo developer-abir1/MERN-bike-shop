@@ -2,9 +2,9 @@ import React from 'react';
 
 const PaymentGetway = () => {
     return (
-        <div>
-            
-        </div>
+        <section className="  h-100 bg-info" >
+
+        </section>
     );
 };
 

@@ -1,22 +1,22 @@
 import React from 'react';
 import Layout from '../../../layout/Layout';
-import './dashboard.css';
 import { Link, Outlet } from "react-router-dom"
-const DashboardHome = ({ title }) => {
+
+const AdminHome = ({ title }) => {
     return (
-        <Layout title="Dashboard Home">
+        <Layout title="Admin Home">
             <div className="dashboard" style={{ height: '500px' }}>
                 <div className=" row    h-100  ">
                     <div className="col-3 dashbodrd-section  "  >
-                        <h2>Dashboard</h2>
+                        <h2 className="text-center py-3">Admin</h2>
                         <ul>
-                            <li>Dashboard</li>
-                            <Link to="/dashboard/castomerReview">
-                                <li>Add Review</li>
-                            </Link>
-                            <Link to="/dashboard/payment">
-                                <li>Payment</li>
-                            </Link>
+                            <li>Admin</li>
+
+                            <li>Management Product</li>
+                            <li>Add Product</li>
+                            <li>Make Admin</li>
+                            <li></li>
+
                             <li>Logout</li>
                         </ul>
                     </div>
@@ -32,4 +32,4 @@ const DashboardHome = ({ title }) => {
     );
 };
 
-export default DashboardHome;
+export default AdminHome;

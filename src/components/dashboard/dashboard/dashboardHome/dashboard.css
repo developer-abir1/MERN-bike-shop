@@ -1,0 +1,13 @@
+.dashbodrd-section ul li{
+    list-style: none;
+    font-size:20px;
+    margin: 10px;
+  font-weight: 400;
+
+}
+.dashbodrd-section{
+    background-color: aquamarine;
+}
+.dashbodrd{
+    height:1000px;
+}

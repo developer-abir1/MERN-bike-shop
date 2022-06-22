@@ -3,17 +3,18 @@ import Footer from '../Share/footer/Footer';
 import Navbar from '../Share/navbar/Navbar';
 
 const Layout = ({ children, title }) => {
+    document.title = title ? title + " - Bike Shop " : "Bike Shop";
 
     return (
         < >
             <header>
-                <title>{title ? title + "bike-shop" : "Bike shop"}</title>
+
                 <Navbar />
             </header>
-            <main className="container">
+            <main  >
                 {children}
             </main>
-            <footer>
+            <footer className="">
                 <Footer />
             </footer>
         </ >

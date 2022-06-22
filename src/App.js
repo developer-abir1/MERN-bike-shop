@@ -6,6 +6,9 @@ import DashboardHome from './components/dashboard/dashboard/dashboardHome/Dashbo
 import AdminHome from './components/dashboard/admin/adminHome/AdminHome';
 import PaymentGetway from './components/dashboard/dashboard/paymentGetway/PaymentGetway';
 import CastomerReview from './components/dashboard/dashboard/castomerReview/CastomerReview';
+import AddProducts from './components/dashboard/admin/addProducts/AddProducts';
+import ManageProducts from './components/dashboard/admin/manageProducts/ManageProducts';
+import MakeAdmin from './components/dashboard/admin/makeAdmin/MakeAdmin';
 
 
 function App() {
@@ -18,7 +21,14 @@ function App() {
           <Route path="/dashboard/payment" element={<PaymentGetway />} />
           <Route path="/dashboard/castomerReview" element={<CastomerReview />} />
         </Route>
-        <Route path="/admin" element={<AdminHome />} />
+        <Route path="/admin" element={<AdminHome />} >
+          <Route path="/admin/add-products" element={<AddProducts />} />
+          <Route path="/admin/mange-products" element={<ManageProducts />} />
+          <Route path="/admin/make-admin" element={<MakeAdmin />} />
+
+
+
+        </Route>
 
       </Routes>
     </div>

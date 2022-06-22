@@ -7,20 +7,20 @@ const DashboardHome = ({ title }) => {
         <Layout title="Dashboard Home">
             <div className="dashboard" style={{ height: '500px' }}>
                 <div className=" row    h-100  ">
-                    <div className="col-3 dashbodrd-section  "  >
+                    <div className="col-3 dashbodrd-section   "  >
                         <h2>Dashboard</h2>
                         <ul>
                             <li>Dashboard</li>
-                            <Link to="/dashboard/castomerReview">
+                            <Link to="/dashboard/castomerReview" style={{ color: "black" }}>
                                 <li>Add Review</li>
                             </Link>
-                            <Link to="/dashboard/payment">
+                            <Link to="/dashboard/payment" style={{ color: "black" }}>
                                 <li>Payment</li>
                             </Link>
                             <li>Logout</li>
                         </ul>
                     </div>
-                    <div className="  col-9  bg-gradient">
+                    <div className="  col-9  p-0">
 
                         <Outlet />
                     </div>

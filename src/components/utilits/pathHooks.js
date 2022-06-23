@@ -9,6 +9,9 @@ const PathHooks = () => {
         { path: '/admin/add-products', title: 'Add Product' },
         { path: '/admin/mange-products', title: 'Mange Product' },
         { path: '/admin/make-admin', title: 'Make Admin' },
+        { path: '/dashboard', title: 'Dashboard' },
+        { path: '/dashboard/payment', title: 'Payment' },
+        { path: '/dashboard/castomerReview', title: 'Review' },
 
     ]
     let curLoc = useLocation();

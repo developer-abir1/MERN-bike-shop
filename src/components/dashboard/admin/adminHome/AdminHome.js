@@ -1,16 +1,18 @@
-import React, { useEffect, useState } from 'react';
+import React from 'react';
 import Layout from '../../../layout/Layout';
-import { Link, Outlet, useLocation } from "react-router-dom"
+import { Link, Outlet } from "react-router-dom"
 
 const AdminHome = ({ title }) => {
+
+
 
     return (
         <Layout title="Admin Home">
             <div className="dashboard" style={{ height: '500px' }}>
                 <div className=" row    h-100  ">
-                    <div className="col-3 dashbodrd-section  "  >
+                    <div className="col-3 dashbodrd-section   "  >
                         <Link to="/admin" style={{ textDecoration: "none", color: 'black' }}>
-                            <h2 className="text-center py-3">Admin</h2>
+
                         </Link>
                         <ul>
 
@@ -28,8 +30,8 @@ const AdminHome = ({ title }) => {
                             <li>Logout</li>
                         </ul>
                     </div>
-                    <div className="  col-9  h-100 dashboardItems">
-                        <h2 className="px-4 py-2 bg-white">   {title}</h2>
+                    <div className="  col-9 p-0  h-100 dashboardItems">
+                        <h2 className=" py-2 bg-white "> <span className="ms-5"> {title}</span> </h2>
                         <Outlet />
                     </div>
 

@@ -8,20 +8,22 @@ const DashboardHome = ({ title }) => {
             <div className="dashboard" style={{ height: '500px' }}>
                 <div className=" row    h-100  ">
                     <div className="col-3 dashbodrd-section   "  >
-                        <h2>Dashboard</h2>
+
                         <ul>
-                            <li>Dashboard</li>
-                            <Link to="/dashboard/castomerReview" style={{ color: "black" }}>
+                            <Link to="/dashboard " style={{ color: "black", textDecoration: "none" }}>
+                                <li>Dashboard</li>
+                            </Link>
+                            <Link to="/dashboard/castomerReview" style={{ color: "black", textDecoration: "none" }}>
                                 <li>Add Review</li>
                             </Link>
-                            <Link to="/dashboard/payment" style={{ color: "black" }}>
+                            <Link to="/dashboard/payment" style={{ color: "black", textDecoration: "none" }}>
                                 <li>Payment</li>
                             </Link>
                             <li>Logout</li>
                         </ul>
                     </div>
-                    <div className="  col-9  p-0">
-
+                    <div className="  col-9  p-0  h-100 dashboardItems">
+                        <h2 className="  py-2 bg-white">   {title}</h2>
                         <Outlet />
                     </div>
 

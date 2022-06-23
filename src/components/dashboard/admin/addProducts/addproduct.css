@@ -1,0 +1,35 @@
+.addproducts{
+    display:flex;
+    flex-direction:column; 
+     
+
+}
+.addproducts input {
+  width: 100%;
+  margin: 10px;
+  padding: 1rem;
+  border-radius: 5px ; 
+  border:1px solid #2a2adf77
+  
+} 
+.addproducts textarea {
+    width: 100%;
+    margin: 10px;
+  padding: 1rem;
+  border-radius: 5px ; 
+ border:1px solid #2a2adf77
+}
+#fileUplode{
+   display: none;
+   
+}
+#upload{
+   border: 1px solid #d4d3d2;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 50px;
+    height: 80px;
+    background-color: #d1cfcf;
+    border-radius:5px;
+}

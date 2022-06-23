@@ -13,24 +13,6 @@ import PathHooks from './components/utilits/pathHooks';
 
 
 function App() {
-  // const [pageTitle, setPageTitle] = useState(null);
-
-  // const titleMap = [
-  //   { path: '/admin', title: 'Admin' },
-  //   { path: '/admin/add-products', title: 'Add Product' },
-  //   { path: '/admin/mange-products', title: 'Mange Product' },
-  //   { path: '/admin/make-admin', title: 'Make Admin' },
-
-  // ]
-  // let curLoc = useLocation();
-  // useEffect(() => {
-  //   const curTitle = titleMap.find(item => item.path === curLoc.pathname)
-  //   if (curTitle && curTitle.title)
-  //   {
-  //     setPageTitle(curTitle.title)
-  //     document.title = curTitle.title
-  //   }
-  // }, [curLoc])
 
   const [pageTitle] = PathHooks(null)
 
@@ -40,7 +22,7 @@ function App() {
 
       <Routes>
         <Route path="/" element={<HomeScressns />} />
-        <Route path="/dashboard" element={<DashboardHome />} >
+        <Route path="/dashboard" element={<DashboardHome title={pageTitle} />} >
           <Route path="/dashboard/payment" element={<PaymentGetway />} />
           <Route path="/dashboard/castomerReview" element={<CastomerReview />} />
         </Route>

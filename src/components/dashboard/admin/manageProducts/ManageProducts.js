@@ -23,16 +23,17 @@ const ManageProducts = () => {
     return (
         <section   >
             <h4>Product quantity  : {proudcts.length}</h4>
-            <table class="table">
+            <table class="table table-hover">
                 <thead>
                     <tr>
                         <th scope="col">Sr. No</th>
                         <th scope="col">Product Name</th>
                         <th scope="col">Price</th>
                         <th scope="col">Discripation</th>
+                        <th scope="col">img</th>
                         <th scope="col">Action</th>
                         <th scope="col">Delete</th>
-                        <th scope="col">img</th>
+
                     </tr>
                 </thead>
                 {proudcts.map((pd, index) => (
@@ -45,16 +46,17 @@ const ManageProducts = () => {
                                 {pd.discripation}
                             </td>
                             <td>
+                                <img width='30px' src={`data:image/png;base64,${pd.image}`} alt="" />
+
+                            </td>
+                            <td>
                                 <button className='btn btn-info text-white'>Update</button>
                             </td>
                             <td>
                                 <button className='btn btn-danger'>Delete</button>
 
                             </td>
-                            <td>
-                                <img width='30px' src={`data:image/png;base64,${pd.image}`} alt="" />
 
-                            </td>
                         </tr>
 
                     </tbody>

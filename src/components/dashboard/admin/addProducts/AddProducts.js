@@ -1,9 +1,7 @@
 import React, { useState } from 'react';
 import './addproduct.css';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faCoffee } from '@fortawesome/free-solid-svg-icons'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import swal from 'sweetalert'
-import { useForm } from "react-hook-form";
 import { faFolderOpen } from '@fortawesome/free-regular-svg-icons';
 
 
@@ -85,7 +83,9 @@ const AddProducts = () => {
 
                 </div>
 
-                <input type="submit" />
+                <div className="d-flex justify-content-end">
+                    <button type="submit" className='btn btn-danger ' >Add Product</button>
+                </div>
             </form>
         </div>
     );

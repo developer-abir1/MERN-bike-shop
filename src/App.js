@@ -12,6 +12,7 @@ import MakeAdmin from './components/dashboard/admin/makeAdmin/MakeAdmin';
 import PathHooks from './components/utilits/pathHooks';
 import Admin from './components/dashboard/admin/admin/Admin';
 import Dashboard from './components/dashboard/dashboard/dashboard/Dashboard';
+import ProductDiteles from './components/Home/Products/ProductDiteles/ProductDiteles';
 
 
 function App() {
@@ -24,11 +25,16 @@ function App() {
 
       <Routes>
         <Route path="/" element={<HomeScressns />} />
+        <Route path="/products/:id" element={<ProductDiteles />} />
+
+
+        {/*  Dashboard */}
         <Route path="/" element={<DashboardHome title={pageTitle} />} >
           <Route path="/dashboard" element={<Dashboard />} />
           <Route path="/dashboard/payment" element={<PaymentGetway />} />
           <Route path="/dashboard/castomerReview" element={<CastomerReview />} />
         </Route>
+        {/* admin */}
         <Route path="/" element={<AdminHome title={pageTitle} />} >
 
           <Route path="/admin" element={<Admin />} />

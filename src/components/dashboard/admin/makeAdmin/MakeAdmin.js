@@ -2,8 +2,9 @@ import React from 'react';
 
 const MakeAdmin = () => {
     return (
-        <section    >
-            <h1>Hello</h1>
+        <section className="d-flex  justify-content-center">
+            <input type="email " className="form-control w-50" placeholder="Enter Admin Email" name="email" />
+            <button className="btn btn-success">Add Admin</button>
         </section>
     );
 };

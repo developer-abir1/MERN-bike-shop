@@ -6,7 +6,12 @@ const Navbar = () => {
   return (
     <nav class="navbar navbar-expand-lg bg-dark  text-white">
       <div class="container">
-        <a class="navbar-brand text-white" href="#">Navbar</a>
+        <a class="navbar-brand text-white" href="#">
+          <Link to="/">
+            E-bick
+          </Link>
+
+        </a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
